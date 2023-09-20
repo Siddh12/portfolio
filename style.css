@@ -223,9 +223,14 @@ footer {
     .aboutme,
     .projectcardholder,
     .aboumeleft,
-    .introleft {
+    .introleft, footer{
         flex-direction: column;
         padding: 0;
+    }
+    .introleft, .introright, .aboumeleft, .aboutmeright, .downlogo, .queryform{
+        padding: 0px 30px;
+        width: 100%;
+        height: auto;
     }
 
     .log {
