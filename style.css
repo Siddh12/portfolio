@@ -18,6 +18,14 @@ header {
     position: sticky;
 }
 
+.nav-button {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #f0f0f0;
+}
+
 .log {
     width: 50%;
     padding: 10px 0 10px 200px;
@@ -102,13 +110,15 @@ nav a:hover {
 .img {
     width: 400px;
     height: 400px;
-    background-color: aquamarine;
 }
 
 .image {
+    display: flex;
+    align-items: end;
+    justify-content: center;
     width: 400px;
-    height: 500px;
-    background-color: yellow;
+    height: 400px;
+    /* background-color: yellow; */
 }
 
 .workwith,
@@ -214,65 +224,6 @@ footer {
 .logo {
     color: #ff7a01;
 }
-
-@media (max-width: 768px) {
-
-    header,
-    .intro,
-    .workwithcompanycontaner,
-    .aboutme,
-    .projectcardholder,
-    .aboumeleft,
-    .introleft, footer{
-        flex-direction: column;
-        padding: 0;
-    }
-    .introleft, .introright, .aboumeleft, .aboutmeright, .downlogo, .queryform{
-        padding: 0px 30px;
-        width: 100%;
-        height: auto;
-    }
-
-    .log {
-        padding-left: 0px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding: 10px 0;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .intro h1 {
-        color: #f0f0f0;
-        font-size: 100%;
-    }
-
-    .intro h4 {
-        color: #f0f0f0;
-        font-size: 100%;
-    }
-
-    .skillimage {
-        width: 300px;
-    }
-
-    .projectcar {
-        width: auto;
-        height: auto;
-    }
-
-    .projectcar p {
-        height: auto;
-    }
-}
-
-
-
-
 
 
 
@@ -436,4 +387,117 @@ footer {
     background: #001925;
     border: none;
     color: white;
+}
+
+@media (max-width: 768px) {
+
+    .myimage{
+        width: 300px;
+    }
+
+    header,
+    .intro,
+    .workwithcompanycontaner,
+    .aboutme,
+    .projectcardholder,
+    .aboumeleft,
+    .introleft,
+    footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .introleft,
+    .introright,
+    .aboumeleft,
+    .aboutmeright,
+    .downlogo,
+    .queryform {
+        padding: 0px 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    .downlogo {
+        padding: 0%;
+    }
+
+    .lowerone {
+        padding: 40px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navlinksfooter {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+
+    .navlinksfooter a {
+        font-size: small;
+    }
+
+    .log {
+        padding-left: 0px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+        flex-direction: row;
+        width: 100%;
+        padding: 10px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav.open {
+        display: flex;
+        
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+    .img{
+        margin-top: 10px;
+        background-color: #002733;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    .intro h1 {
+        color: #f0f0f0;
+        font-size: 100%;
+    }
+
+    .intro h4 {
+        color: #f0f0f0;
+        font-size: 100%;
+    }
+
+    .skillimage {
+        width: 300px;
+    }
+
+    .projectcar {
+        width: auto;
+        height: auto;
+    }
+
+    .projectcar p {
+        height: auto;
+    }
+
+    .hedingcontener {
+        margin-bottom: 40px;
+    }
 }
